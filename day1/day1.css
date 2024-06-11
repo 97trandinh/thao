@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0;
+
+}
+ .hi {
+    color: red;
+    background-color: aqua;
+    padding: 10px 20px 30px 40px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    margin-bottom: 30px;
+ }
+ .hello{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+ a{
+    text-decoration: none;
+    color: blue;
+ }
+ ul{
+    margin-left: 50px;
+ }
+ li{ list-style: none;
+}

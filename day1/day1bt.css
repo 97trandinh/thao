@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 50px;
+    background-color: aqua;
+    margin-bottom: 10px;
+    }
+  nav{
+    height: 30px;
+    background-color: aquamarine;
+    
+  }
+  /* làm việc với grid */
+  .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    height: 300px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .left{
+    background-color: beige;
+  }
+  .right{
+    background-color: bisque;
+  }
+  footer{
+    background-color: blue;
+    height: 30px;
+    margin-top: 10px;
+  }

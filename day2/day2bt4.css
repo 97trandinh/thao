@@ -36,7 +36,6 @@ nav {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 100px;
 
     img {
         border-radius: 10px;
@@ -57,12 +56,10 @@ nav {
 }
 
 .container {
-    .box {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3,1fr); 
         gap: 16px;
-
         .box2 {
             border: 1px solid#E8E8EA;
             border-radius: 12px;
@@ -109,7 +106,7 @@ nav {
             }
         }
 
-    }
+
 }
 
 .viewallpost {
@@ -124,6 +121,6 @@ nav {
 }
 
 footer{
-    
-}
+    background-color: #696A75;
+} 
 

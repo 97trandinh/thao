@@ -1,0 +1,82 @@
+nav {
+    height: 50px;
+}
+
+.container {
+    display: grid;
+    height: calc(100vh - 50px);
+}
+.header {
+    grid-area: h;
+    background-color: aqua;
+}
+.feature1 {
+    grid-area: f1;
+    background-color: orange;
+}
+.feature2 {
+    grid-area: f2;
+    background-color: violet;
+}
+.feature3 {
+    grid-area: f3;
+    background-color: red;
+}
+.signup {
+    grid-area: s;
+    background-color: green;
+}
+.content {
+    grid-area: c;
+    background-color: rgb(41, 41, 171);
+}
+
+ /* laptop */
+@media screen and (min-width: 1025px) {
+    nav {
+        background-color: red;
+    }
+    .container {
+        grid-template-areas:
+        "h h h"
+        "f1 f2 f3"
+        "f1 f2 f3"
+        "s s s"
+        "c c c"
+        "c c c"
+        ;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:741px) and (max-width:1025px) {
+    nav {
+        background-color: blue;
+    }
+    .container {
+        grid-template-areas:
+        "h h"
+        "c c"
+        "c c"
+        "s f1"
+        "f2 f3"   
+        ;
+    }
+}
+
+ /* mobile */
+ @media screen and (max-width: 740px) {
+    nav {
+        background-color: yellow;
+    }
+    .container {
+        grid-template-areas:
+        "h"
+        "c"
+        "s"
+        "f1"
+        "f2"
+        "f3" 
+        ;
+    }
+ }

@@ -27,9 +27,12 @@ header {
         color: blue;
     }
 }
-
+.container {
+    width: 80%;
+    margin: auto;
+}
 /* laptop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     header {
 
         ul {
@@ -44,8 +47,32 @@ header {
             display: none;
         }
     }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
 }
 
+@media screen and (min-width: 768px)  and (max-width: 1024px){
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        .box {
+            width: 49%;
+            &:hover {
+                transform: scale(1.1);
+               
+            }
+            img {
+                object-fit: cover;
+
+            }
+        }
+    }
+}
 /* mobile */
 @media screen and (max-width: 767px) {
     header {
@@ -70,4 +97,5 @@ header {
         }
 
     }
+   
 }

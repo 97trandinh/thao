@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/hd/cloudy-sky-background-c36xhbkd8s0il92z.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    height: 80%;
+    background: linear-gradient(to left, #5AB2FF, #CAF4FF, );
+    border-radius: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+
+    .box1 {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 145.2px;
+            width: 258px;
+            margin-bottom: -10px;
+            margin-top: -30px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+
+            p {
+                font-weight: bolder;
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            img {
+                padding: 25px 0px 0px 0px;
+                height: 30%;
+                width: 30%;
+            }
+        }
+
+        .button {
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+
+            a {
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                background: linear-gradient(to bottom right, #5AB2FF, #CAF4FF, #CAF4FF);
+                border-radius: 10px;
+                width: 100px;
+
+                &:hover {
+
+                    background: linear-gradient(to bottom right, #54a6ed, #b5e3ef, #b5e3ef);
+
+                }
+            }
+
+        }
+    }
+
+    .box2 {
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+        height: 100%;
+        justify-content: center;
+        border-radius: 120px 20px 20px 120px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background: linear-gradient(to bottom right,
+                rgba(90, 178, 255, 0.5),
+                rgba(202, 244, 255, 0.5)
+            );
+        padding: 20px 40px 20px 70px;
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            color: black;
+        }
+
+        .container1 {
+            size: 3;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+            .Box {
+                color: black;
+
+                input {
+                    width: 100%;
+                    padding: 5px;
+                }
+
+                select {
+                    width: 100%;
+                    padding: 5px;
+
+                }
+
+                input[type="radio"] {
+                    width: auto;
+                    margin-left: 15px;
+
+                }
+
+
+            }
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: end;
+            margin-right: 50px;
+
+            a {
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                background: linear-gradient(to bottom right, #5AB2FF, #CAF4FF, #CAF4FF);
+                border-radius: 10px;
+                width: 100px;
+
+                &:hover {
+
+                    background: linear-gradient(to bottom right, #54a6ed, #b5e3ef, #b5e3ef);
+
+                }
+            }
+
+        }
+
+    }
+
+
+}

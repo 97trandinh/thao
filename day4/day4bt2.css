@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/hd/cloudy-sky-background-c36xhbkd8s0il92z.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: white;
+}
+
+th {
+    background-color: aqua;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #ffeaea; /* Màu nền cho hàng chẵn */
+}

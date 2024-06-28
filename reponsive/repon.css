@@ -27,6 +27,7 @@ header {
         color: blue;
     }
 }
+<<<<<<< HEAD
 
 .frame4 {
     h1{
@@ -47,6 +48,12 @@ header {
         }
 }
 
+=======
+.container {
+    width: 80%;
+    margin: auto;
+}
+>>>>>>> 208911ae59f28ac66ed41936d45b439c33c7e633
 /* laptop */
 @media screen and (min-width: 1025px) {
     header {
@@ -63,6 +70,7 @@ header {
             display: none;
         }
     }
+<<<<<<< HEAD
    .frame4 {
         .container {
             grid-template-columns: repeat(4, 1fr);
@@ -90,8 +98,34 @@ header {
             grid-template-columns: repeat(2, 1fr);
         }
    }
+=======
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+>>>>>>> 208911ae59f28ac66ed41936d45b439c33c7e633
 }
 
+@media screen and (min-width: 768px)  and (max-width: 1024px){
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        .box {
+            width: 49%;
+            &:hover {
+                transform: scale(1.1);
+               
+            }
+            img {
+                object-fit: cover;
+
+            }
+        }
+    }
+}
 /* mobile */
 @media screen and (max-width: 767px) {
     header {
@@ -117,9 +151,13 @@ header {
         }
 
     }
+<<<<<<< HEAD
     .frame4 {
         .container {
             grid-template-columns: 1fr;
         }
    }
+=======
+   
+>>>>>>> 208911ae59f28ac66ed41936d45b439c33c7e633
 }

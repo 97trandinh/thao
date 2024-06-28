@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 32px;
+    }
+}
+
+header {
+    background-color: aqua;
+    width: 50%;
+    padding-bottom: 30px;
+    h1 {
+      width: 100vw;
+      background-color: blue;
+    }
+}
